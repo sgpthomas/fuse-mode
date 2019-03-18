@@ -1,18 +1,15 @@
-# Xi Mode
-This provides simple syntax highlighting and indentation for Xi in Emacs.
-
-<img src="https://raw.githubusercontent.com/sgpthomas/xi-mode/master/pics/xi-mode.gif" width="500">
+# Fuse Mode
+This provides simple syntax highlighting and indentation for Fuse in Emacs.
 
 ## Installation
-Clone this repository to a location of your choice. Add it to the laod path, and then require `xi-mode`. 
+Clone this repository to a location of your choice. Add it to the laod path, and then require `fuse-mode`. 
 For Spacemacs, this looks like adding the following lines to `dotspacemacs/user-config` in your `.spacemacs` file:
 ```elisp
-(push "~/.emacs.d/private/xi-mode" load-path)
-(require 'xi-mode)
+(push "~/.emacs.d/private/local/fuse-mode" load-path)
+(require 'fuse-mode)
 ```
 I imagine it looks very similar for pure emacs, but haven't actually tried it myself.
 
 ## Known Bugs
  - The indentation code isn't aware of comments which means that a lone bracket in a comment will throw off indentation.
- - `If` and `While` statements that don't use brackets won't have indented bodies. This is more of an issue that the first so I will probably fix this soon.
  - Negative numbers not highlighted
